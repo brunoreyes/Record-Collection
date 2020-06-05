@@ -1,7 +1,10 @@
+* {
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 400;  
+}
 body {
   background: url('record.png'); 
-  font-family: 'Spicy Rice', cursive;
-  font-weight: 400;
+  
   color: #ffffff;
   letter-spacing: 2px;}
 .header {
