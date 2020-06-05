@@ -1,0 +1,26 @@
+body {
+  background: url('record.png'); 
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 2px;}
+.header {
+    background: #9701a0;
+    padding-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 35px;
+}
+p{
+    font-size: 25px;
+}
+/* Recall, * { } modifies everything, so if we put a bkd-img in it, 
+that image will come through not just the body, but the header as well,
+making it hard to see your header clearly*/
+
