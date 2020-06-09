@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Week 5 Assignment</title>
-    <script src="scripts/week5.js" charset="utf-8"></script>
     <link rel="stylesheet" type href="week5.css">
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
 
@@ -15,8 +14,41 @@
         <p>See console for output</p>
         <h2>Bruno's Record Shop</h2>
       </div>
-    </div>
-
+      <div id="formContainer">
+        <form id="form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title"><br><br>
+          <label for="artist">Artist:</label>
+          <input type="text" id="artist" name="artist"><br><br>
+          <label for="year">Year:</label>
+          <input type="text" id="year" name="year"><br><br>
+          <input type="submit" value="Add a Record!">
+        </form>
+      </div>
+      <div id="table">
+        <table style="width:100%">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Artist</th>
+              <th>Year</th>   
+           </tr>      
+          </thead>
+          <tbody id="table">
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     <!-- Create an unordered list with any questions you have -->
+    <script src="scripts/week5.js" charset="utf-8"></script>
   </body>
 </html>

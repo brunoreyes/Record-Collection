@@ -4,14 +4,39 @@
 }
 body {
   background: url('record.png'); 
-  color: #ffffff;
   letter-spacing: 2px;}
-.header {
+  .header {
     background: #9701a0;
+    color: #ffffff;
     padding-left: 20px;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
+}
+#formContainer {
+  text-align: right;
+  padding: 20px;
+  background-color: #eb74f1;
+  width: fit-content;
+  margin: 10px auto;
+  border-radius: 10px;
+
+  /*1st value is top & bottom, 2nd is left & right*/
+}
+#table {
+  text-align: center;
+  padding: 20px;
+  background-color: #eca8f0;
+  width: fit-content;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+thead {
+  font-size: 20px;
+
+}
+table {
+  border-spacing: 20px;
 }
 h1{
     font-size: 45px;
