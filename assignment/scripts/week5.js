@@ -4,15 +4,27 @@ document.querySelector("#form").addEventListener("submit", function(event){
     let title = document.querySelector("#title").value;
     let artist = document.querySelector("#artist").value;
     let year = document.querySelector("#year").value;
-    addToCollection(title, artist, year);
-    console.log(`baby`);
+    let record = addToCollection(title, artist, year);
+    //console.log(`baby`); used to see if it was working
     event.preventDefault();
 });
 //the function is called when the button is pressed
 
 function addRow(record){
-    let tbody = document.querySelector("#tbody")
-    
+    let tableRow = document.createElement(`tr`);
+    let tableTitle = document.createElement(`td`);
+    let tableArtist = document.createElement(`td`);
+    let tableYear = document.createElement(`td`);
+    tableTitle.innerText = record.title;
+    tableArtist.innerText = record.artist;
+    tableYear.innerText = record.year;
+    tableRow.appendChild(tableTitle);
+    tableRow.appendChild(tableArtist);
+    tableRow.appendChild(tableYear);
+    document.querySelector(`#tableBody`).appendChild(tableRow);
+    document.querySelector(`#collectionLength`).innerText = collection.length
+    //  or  document.querySelector("#tableBody").innerHTML(tableRow);
+
 }
 
 
@@ -20,7 +32,8 @@ function addToCollection(recordTitle,recordArtist,recordYear){
     let record = { title: recordTitle, artist: recordArtist, year: recordYear };
     collection.push(record);
     console.log(`Records in Collection: ${collection.length} `)
-    return true;
+    addRow(record);
+    return record;
 }
 console.log(`--- Testing addToCollection() ---`)
 addToCollection(`Burn`,`Usher`, 2004);
@@ -118,3 +131,4 @@ console.log
 // console.log(`(expect 1 Nobody record returned in an array)`,(search({artist:'Nobody'})));
 console.log(`(expect 1 record from 2012 in array)`,(search({year:2030})));
 //console.log(`(expect Sam Cooke)`,(search('Change Is Gonna Come')));
+

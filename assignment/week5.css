@@ -9,7 +9,7 @@ body {
     background: #9701a0;
     color: #ffffff;
     padding-left: 20px;
-    padding: 5px;
+    padding: 1px;
     border-radius: 10px;
     text-align: center;
 }
@@ -20,16 +20,18 @@ body {
   width: fit-content;
   margin: 10px auto;
   border-radius: 10px;
+  /* float: left; */
 
   /*1st value is top & bottom, 2nd is left & right*/
 }
-#table {
-  text-align: center;
+#tableContainer {
+  text-align: left;
   padding: 20px;
   background-color: #eca8f0;
   width: fit-content;
   margin: 10px auto;
   border-radius: 10px;
+ /* float: right; */
 }
 thead {
   font-size: 20px;
@@ -46,6 +48,7 @@ h2{
 }
 p{
     font-size: 25px;
+    text-align: center;
 }
 /* Recall, * { } modifies everything, so if we put a bkd-img in it, 
 that image will come through not just the body, but the header as well,
