@@ -8,8 +8,7 @@ document.querySelector("#form").addEventListener("submit", function(event){
     //console.log(`baby`); used to see if it was working
     event.preventDefault();
 });
-//the function is called when the button is pressed
-
+//^ this function is called when 'Add Record' button is pressed
 function addRow(record){
     let tableRow = document.createElement(`tr`);
     let tableTitle = document.createElement(`td`);
@@ -24,10 +23,8 @@ function addRow(record){
     document.querySelector(`#tableBody`).appendChild(tableRow);
     document.querySelector(`#collectionLength`).innerText = collection.length
     //  or  document.querySelector("#tableBody").innerHTML(tableRow);
-
+    //^ this function adds a row to Current Collection.
 }
-
-
 function addToCollection(recordTitle,recordArtist,recordYear){
     let record = { title: recordTitle, artist: recordArtist, year: recordYear };
     collection.push(record);
@@ -36,14 +33,15 @@ function addToCollection(recordTitle,recordArtist,recordYear){
     return record;
 }
 console.log(`--- Testing addToCollection() ---`)
-addToCollection(`Burn`,`Usher`, 2004);
 addToCollection(`OMG`,`Usher`, 2008);
+addToCollection(`Burn`,`Usher`, 2004);
+addToCollection(`Burn`,`Ellie Goulding`, 2013);
+addToCollection(`Redbone`,`Childish Gambino`, 2020);
+addToCollection(`Uma Therman`,`Fall Out Body`, 2015);
 addToCollection(`Summertime Sadness`,`Lana Del Rey`, 2012);
 addToCollection(`Change Is Gonna Come`, `Sam Cooke`, 1964);
-addToCollection(`Burn`,`Ellie Goulding`, 2013);
-addToCollection(`Usher`,`Nobody`, 2020);
-addToCollection(`Usher`,`Somebody`, 2020);
-// console.log(`They're (expect 4)`, collection.length, `records in the collection:`, collection);
+addToCollection(`Come and Get Your Love`,`Redbone`, 1974);
+console.log(`They're (expect 4)`, collection.length, `records in the collection:`, collection);
 
 function findRecord(recordTitle){
     for(let i = 0; i < collection.length; i++){

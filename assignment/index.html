@@ -8,37 +8,39 @@
 
   </head>
   <body>
+    <div class="header">
+      <h1>Week 5 Assignment</h1>
+      <p>See console for output</p>
+      <h2>Bruno's Record Shop</h2>
+    </div>
     <div class="Body">
-      <div class="header">
-        <h1>Week 5 Assignment</h1>
-        <p>See console for output</p>
-        <h2>Bruno's Record Shop</h2>
-      </div>
-      <div id="formContainer">
-        <form id="form">
-          <label for="title">Title:</label>
-          <input type="text" id="title" name="title"><br><br>
-          <label for="artist">Artist:</label>
-          <input type="text" id="artist" name="artist"><br><br>
-          <label for="year">Year:</label>
-          <input type="text" id="year" name="year"><br><br>
-          <input type="submit" value="Add a Record!">
-        </form>
-      </div>
-      <div id="tableContainer">
-          <p>Current Collection: <span id="collectionLength"></span> Records</p> 
-        <table style="width:100%">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Artist</th>
-              <th>Year</th>   
-           </tr>      
-          </thead>
-          <tbody id="tableBody">
-          </tbody>
-        </table>
-      </div>
+      <div id=formAndTableContainer>
+        <div id="formContainer">
+            <form id="form">
+              <label for="title">Title</label>
+              <input type="text" id="title" name="title"><br><br>
+              <label for="artist">Artist</label>
+              <input type="text" id="artist" name="artist"><br><br>
+              <label for="year">Year</label>
+              <input type="text" id="year" name="year"><br><br>
+              <input id="submitButton" type="submit" value="Add Record">
+            </form>
+          </div>
+          <div id="tableContainer">
+              <p id="currentCollection">Current Collection: <span id="collectionLength"></span> Records</p> 
+            <table style="width:100%">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Artist</th>
+                  <th>Year</th>   
+              </tr>      
+              </thead>
+              <tbody id="tableBody">
+              </tbody>
+            </table>
+          </div>
+    </div>
     <!-- Create an unordered list with any questions you have -->
     <script src="scripts/week5.js" charset="utf-8"></script>
   </body>

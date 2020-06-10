@@ -1,54 +1,82 @@
-* {
-  font-family: 'Spicy Rice', cursive;
-  font-weight: 400;  
-}
-body {
-  background: url('record.png'); 
-  letter-spacing: 2px;}
-  .header {
-    background: #9701a0;
-    color: #ffffff;
-    padding-left: 20px;
-    padding: 1px;
-    border-radius: 10px;
-    text-align: center;
-}
-#formContainer {
-  text-align: right;
-  padding: 20px;
-  background-color: #eb74f1;
-  width: fit-content;
-  margin: 10px auto;
-  border-radius: 10px;
-  /* float: left; */
 
-  /*1st value is top & bottom, 2nd is left & right*/
+body{
+  background: url('record.png'); 
+  letter-spacing: 2.5px;  
+}
+.header{
+  font-family: 'Spicy Rice', cursive;
+  text-align: center;
+  background: #9701a0;
+  border-radius: 10px;
+  border: 3px solid #000000;
+  color: #F7B32B;
+}
+#formAndTableContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  /* // align-items: center aligns vertically
+  while justify-content: center aligns horizontally */
+}
+#formContainer{
+  font-family: 'Spicy Rice', cursive;
+  text-align: left;
+  background-color: #F7B32B;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 32px;
+  margin: 10px;
+  width: 150px;
+  color: #9701a0;
+
+}
+#submitButton {
+  font-size: 15px;
+  font-family: 'Spicy Rice', cursive;
+  color: #F7B32B;
+  background-color: #9701a0;
+  padding: 10px;
 }
 #tableContainer {
   text-align: left;
-  padding: 20px;
-  background-color: #eca8f0;
-  width: fit-content;
-  margin: 10px auto;
+  background-color: #F7B32B;
+  border: 3px solid #000000;
   border-radius: 10px;
- /* float: right; */
+  padding: 20px;
+  margin: 10px;
+}
+#currentCollection {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 36px;
+  text-align: center;
+  color: #9701a0;
+  margin-top: -1px;
+  margin-bottom: 30px;
 }
 thead {
-  font-size: 20px;
-
+  font-family: 'Spicy Rice', cursive;
+  font-size: 19px;
+  margin: 10px 10px;
+  /*1st value is top & bottom, 2nd is left & right*/
 }
 table {
-  border-spacing: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-spacing:40px 10px;
+  margin-top: -20px;
+  color: #9701a0;
 }
-h1{
-    font-size: 45px;
+h1 {
+  font-size: 45px;
+  margin: 5px 5px;
 }
-h2{
-    font-size: 35px;
+h2 {
+  font-size: 35px;
+   margin: 5px 5px;
 }
-p{
-    font-size: 25px;
-    text-align: center;
+p {
+  font-size: 25px;
+  margin: 5px 5px;
 }
 /* Recall, * { } modifies everything, so if we put a bkd-img in it, 
 that image will come through not just the body, but the header as well,
