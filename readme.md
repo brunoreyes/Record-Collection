@@ -4,7 +4,7 @@ This week, we'll be exploring objects by creating an application to help maintai
 
 ## Screenshot
 
-![Salary Calculator](https://tinyurl.com/y2tzlnd6)
+![Record Collection](https://tinyurl.com/y6kdmln7)
 ## Required Features
 
 ### Adding records to the collection
@@ -22,11 +22,6 @@ Time to make our index.html page look cool!
 [x] - look up the CSS `background-image` property to learn how to use the provided `record.png` as the background image on your page with a relative path.
 [x] - look up CSS `background-size` to learn how to fill the body of the page.
 - Add a background color to the header to make it stand out
-
-Here's an example of what the style could look like
-<img src="./example.png">
-
-**Reminder**: Make sure to answer this week's Slack discussion question!
 
 ## Stretch Goals
 
